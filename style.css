@@ -1,0 +1,156 @@
+.container {
+    max-width: 335px;
+    background-color: #f4f4f4;
+    margin: auto;
+    text-align: center;
+    padding: 1rem;;
+}
+
+form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+form button {
+    display: block;
+    margin: auto;
+    margin-top: 1rem;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
+#letters, h5 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+#solution {
+    margin-top: 1rem;
+}
+#solution p {
+    display: inline;
+    border-bottom: 1px solid#000;
+    font-size: 24px;
+    letter-spacing: 2px;
+    width: 20px;
+    margin: 0;
+}
+
+#solution p{
+    position:relative;
+  }
+#solution p::after{
+    content: ' ';
+    display:block;
+    position:absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height:1px;
+    background-color:#000;
+  }
+
+
+
+
+
+
+
+
+
+
+/* GAME BOARD */
+.game-area {
+    position: relative;
+    height: 200px;
+}
+
+.top {
+    position: absolute;
+    width: 110px;
+    height: 3px;
+    background: #000;
+    left: 40px;
+}
+.side {
+    position: absolute;
+    height: 190px;
+    width: 3px;
+    background: #000;
+    left: 40px;
+}
+.base {
+    position: absolute;
+    height: 3px;
+    width: 200px;
+    background: #000;
+    top: 190px;
+    left: 40px;
+}
+.noose {
+    position: absolute;
+    height: 30px;
+    width: 3px;
+    background: #000;
+    left: 150px;
+}
+#head {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    left: 133px;
+    top: 30px;
+}
+#torso {
+    position: absolute;
+    height: 50px;
+    width: 2px;
+    background: #000;
+    left: 150px;
+    top: 67px;
+}
+#left-arm {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    left: 127px;
+    top: 87px;
+    transform: rotate(15deg);
+}
+#right-arm {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    left: 151px;
+    top: 87px;
+    transform: rotate(-15deg);
+}
+#right-leg {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background: #000;
+    left: 130px;
+    top: 126px;
+    transform: rotate(-50deg);
+}
+#left-leg {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    left: 145px;
+    top: 126px;
+    transform: rotate(50deg);
+}
+
